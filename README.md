@@ -88,11 +88,9 @@ POST /api/upload-file
 
 Request:
 
-PDF file
-
-Selected skills
-
-Response:
+-->PDF file
+-->Selected skills
+-->Response:
 
 {
   "filename": "resume.pdf",
@@ -111,6 +109,7 @@ GET /api/history
 Returns all previously analyzed resumes.
 
 🗃️ Database Design
+
 analysis_history Table
 Column Name	Type
 id	Long (PK)
@@ -121,36 +120,32 @@ score	Double
 matched_skills	List<String>
 missing_skills	List<String>
 created_at	Timestamp
+
 ⚙️ How to Run the Project
-Backend (Spring Boot)
 
-Clone the repository
-
-Open in IDE (IntelliJ / Eclipse)
-
-Configure database in application.properties
+1.Backend (Spring Boot)
+2.Clone the repository
+3.Open in IDE (IntelliJ / Eclipse)
+4.Configure database in application.properties
 
 Run:
+->mvn spring-boot:run
 
-mvn spring-boot:run
-
-
-Backend runs on:
-
+->Backend runs on:
 http://localhost:8080
 
-Frontend (React)
+->Frontend (React)
 
-Navigate to frontend folder
+->Navigate to frontend folder
 
-Install dependencies:
+->Install dependencies:
 
-npm install
+---npm install
 
 
-Start app:
+---Start app:
 
-npm start
+---npm start
 
 
 Frontend runs on:
@@ -159,44 +154,33 @@ http://localhost:8081
 
 🎯 Use Cases
 
-Resume screening for HR teams
-
-Skill gap analysis for job seekers
-
-ATS score estimation before job application
-
-Resume optimization guidance
+1.Resume screening for HR teams
+2.Skill gap analysis for job seekers
+3.ATS score estimation before job application
+4.Resume optimization guidance
 
 📈 Future Enhancements (Optional)
-
-Job Description matching
-
-Authentication (Admin/User)
-
-Resume ranking system
-
-Downloadable analysis report (PDF)
-
-Cloud deployment (AWS / Render)
+1.Job Description matching
+2.Authentication (Admin/User)
+3.Resume ranking system
+4.Downloadable analysis report (PDF)
+5.Cloud deployment (AWS / Render)
 
 👨‍💻 Author
 
 Hasan Mohamed
-Computer Science Engineer
+
+B.E.Computer Science Engineer
+
 Spring Boot & Java Developer
 
 ⭐ Why This Project Matters
 
 This project demonstrates:
 
-End-to-end full-stack development
-
-Practical use of Spring Boot REST APIs
-
-Database design & persistence
-
-Frontend-backend integration
-
-Real-world resume screening logic
-
-Perfect for beginner-to-intermediate Spring Boot developers.
+->End-to-end full-stack development.
+->Practical use of Spring Boot REST APIs.
+->Database design & persistence.
+->Frontend-backend integration.
+->Real-world resume screening logic.
+->Perfect for beginner-to-intermediate Spring Boot developers.
