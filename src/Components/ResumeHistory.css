@@ -1,0 +1,105 @@
+/* ===== Resume History Card ===== */
+.history-card {
+  background: linear-gradient(135deg, #ffffff, #f9fafb);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  margin-top: 40px;
+}
+
+/* ===== Title ===== */
+.history-title {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #4f46e5;
+  text-align: center;
+}
+
+/* ===== Table Wrapper ===== */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  background: linear-gradient(90deg, #4f46e5, #14b8a6);
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background 0.3s ease;
+}
+
+tbody tr:hover {
+  background: #f1f5f9;
+}
+
+/* ===== File Name ===== */
+.file-name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* ===== Score Badges ===== */
+.score {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.score.good {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.score.average {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.score.poor {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* ===== Messages ===== */
+.history-msg {
+  text-align: center;
+  margin-top: 20px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.history-error {
+  text-align: center;
+  margin-top: 20px;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  th,
+  td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .history-title {
+    font-size: 20px;
+  }
+}
